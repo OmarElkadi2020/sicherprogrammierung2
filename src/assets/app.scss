@@ -1,0 +1,27 @@
+// app.scss 
+// see https://bootstrap.themes.guide/how-to-customize-bootstrap.html
+/* import the necessary Bootstrap files, file-links adjusted by UG ! */ 
+// @import "bootstrap/functions"; 
+@import "../../node_modules/bootstrap-scss/functions"; 
+// @import "bootstrap/variables"; 
+@import "../../node_modules/bootstrap-scss/variables";
+// $theme-colors: map-remove($theme-colors, "primary", "danger");
+@import "../../node_modules/bootstrap-scss/mixins" ;
+// Then add additional custom code here
+
+$thdblue: #1a4273; 
+$thddarkgrey: #6f6f6e; 
+$thdgrey: #a8a8a8; 
+$thdlightgrey: #dadada; 
+$thddonaublue: #009fe3; // for tests
+
+$theme-colors: ( 
+    "primary": $thdblue,
+    "success":  $thddonaublue,
+    "danger": rgb(231, 61, 85)
+);
+
+//$body-bg: $green;
+
+/* finally, import Bootstrap to set the changes! */ 
+@import "../../node_modules/bootstrap-scss/bootstrap.scss";
